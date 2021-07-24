@@ -1,9 +1,9 @@
-package br.com.inclusaodev.board.business.topico.model;
+package br.com.inclusaodev.board.business.topico;
 
-import br.com.inclusaodev.board.business.curso.model.Curso;
+import br.com.inclusaodev.board.business.curso.Curso;
 import br.com.inclusaodev.board.security.usuario.model.Usuario;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Topico {
 	@Id
@@ -24,7 +24,7 @@ public class Topico {
 	private LocalDateTime dataCriacao;
 
 	@Enumerated(EnumType.ORDINAL)
-	private StatusTopico status;
+	private TopicoStatus status;
 
 	@ManyToOne
 	private Usuario autor;

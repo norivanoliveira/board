@@ -1,15 +1,17 @@
-package br.com.inclusaodev.board.business.topico.vo;
+package br.com.inclusaodev.board.business.topico.util;
 
-import br.com.inclusaodev.board.business.topico.model.Topico;
+import br.com.inclusaodev.board.business.topico.Topico;
+import br.com.inclusaodev.board.business.topico.vo.TopicoVO;
 import lombok.experimental.UtilityClass;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @UtilityClass
 public class TopicoVOConveter {
 
-     public static List<TopicoVO> convertTopicosToTopicosVO(List<Topico> topicos){
+     public static Collection<TopicoVO> convertTopicosToTopicosVO(List<Topico> topicos) {
           return topicos.stream().map(TopicoVOConveter::createTopicoVO).collect(Collectors.toList());
      }
 

@@ -1,6 +1,6 @@
-package br.com.inclusaodev.board.business.resposta.model;
+package br.com.inclusaodev.board.business.resposta;
 
-import br.com.inclusaodev.board.business.topico.model.Topico;
+import br.com.inclusaodev.board.business.topico.Topico;
 import br.com.inclusaodev.board.security.usuario.model.Usuario;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
