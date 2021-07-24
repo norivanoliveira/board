@@ -1,4 +1,4 @@
-package br.com.inclusaodev.board.negocio.topico;
+package br.com.inclusaodev.board.business.topico.model;
 
 import br.com.inclusaodev.board.legacy.Curso;
 import br.com.inclusaodev.board.legacy.Resposta;

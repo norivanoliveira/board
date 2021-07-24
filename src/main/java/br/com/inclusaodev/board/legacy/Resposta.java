@@ -1,6 +1,6 @@
 package br.com.inclusaodev.board.legacy;
 
-import br.com.inclusaodev.board.negocio.topico.Topico;
+import br.com.inclusaodev.board.business.topico.model.Topico;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

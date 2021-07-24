@@ -1,4 +1,4 @@
-package br.com.inclusaodev.board.negocio.topico.vo;
+package br.com.inclusaodev.board.business.topico.vo;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

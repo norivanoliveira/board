@@ -1,9 +1,9 @@
-package br.com.inclusaodev.board.negocio.topico.util;
+package br.com.inclusaodev.board.business.topico.util;
 
 import br.com.inclusaodev.board.legacy.Curso;
 import br.com.inclusaodev.board.legacy.Usuario;
-import br.com.inclusaodev.board.negocio.topico.StatusTopico;
-import br.com.inclusaodev.board.negocio.topico.Topico;
+import br.com.inclusaodev.board.business.topico.model.StatusTopico;
+import br.com.inclusaodev.board.business.topico.model.Topico;
 import lombok.experimental.UtilityClass;
 
 import java.time.LocalDateTime;

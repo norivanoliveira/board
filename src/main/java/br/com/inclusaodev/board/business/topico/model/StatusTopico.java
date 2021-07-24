@@ -1,4 +1,4 @@
-package br.com.inclusaodev.board.negocio.topico;
+package br.com.inclusaodev.board.business.topico.model;
 
 public enum StatusTopico {
 	

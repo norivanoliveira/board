@@ -1,6 +1,6 @@
-package br.com.inclusaodev.board.negocio.topico.vo;
+package br.com.inclusaodev.board.business.topico.vo;
 
-import br.com.inclusaodev.board.negocio.topico.Topico;
+import br.com.inclusaodev.board.business.topico.model.Topico;
 import lombok.experimental.UtilityClass;
 
 import java.util.List;
