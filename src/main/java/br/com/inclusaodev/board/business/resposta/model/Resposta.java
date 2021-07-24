@@ -6,6 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.time.LocalDateTime;
 
 @Getter
@@ -13,12 +17,17 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Resposta {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String mensagem;
-	private Topico topico;
 	private LocalDateTime dataCriacao;
-	private Usuario autor;
 	private Boolean solucao;
 
+	@ManyToOne
+	private Topico topico;
+
+	@ManyToOne
+	private Usuario autor;
 
 }
