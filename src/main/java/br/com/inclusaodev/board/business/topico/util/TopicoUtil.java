@@ -1,7 +1,7 @@
 package br.com.inclusaodev.board.business.topico.util;
 
-import br.com.inclusaodev.board.legacy.Curso;
-import br.com.inclusaodev.board.legacy.Usuario;
+import br.com.inclusaodev.board.business.curso.model.Curso;
+import br.com.inclusaodev.board.security.usuario.model.Usuario;
 import br.com.inclusaodev.board.business.topico.model.StatusTopico;
 import br.com.inclusaodev.board.business.topico.model.Topico;
 import lombok.experimental.UtilityClass;
@@ -12,11 +12,10 @@ import java.time.LocalDateTime;
 public class TopicoUtil {
 
     public static Topico getFakeTopico() {
-        Topico topicoTemp = new Topico(Long.valueOf(1), "testou", "teste",
+        return new Topico(1L, "testou", "teste",
                 LocalDateTime.now(), StatusTopico.NAO_RESPONDIDO,
-                new Usuario(Long.valueOf(1), "autor", "email", "senha"),
-                new Curso(Long.valueOf(1), "Curso", null),
+                new Usuario(1L, "autor", "email", "senha"),
+                new Curso(1L, "Curso", null),
                 null);
-        return topicoTemp;
     }
 }

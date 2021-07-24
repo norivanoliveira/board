@@ -1,4 +1,4 @@
-package br.com.inclusaodev.board.legacy;
+package br.com.inclusaodev.board.business.curso.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

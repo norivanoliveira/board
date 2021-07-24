@@ -1,4 +1,4 @@
-package br.com.inclusaodev.board.legacy;
+package br.com.inclusaodev.board.security.usuario.model;
 
 
 import lombok.AllArgsConstructor;
