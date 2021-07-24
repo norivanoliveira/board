@@ -15,8 +15,8 @@ public class TopicoRestController {
     TopicoService service;
 
     @RequestMapping("/topicos")
-    public Collection<TopicoVO> getTopicos() {
-        return service.getAllTopicos();
+    public Collection<TopicoVO> getTopicos(String cursoNome) {
+        return service.getTopicosByFilter(cursoNome);
     }
 
 }

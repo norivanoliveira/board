@@ -6,5 +6,5 @@ import java.util.Collection;
 
 public interface TopicoService {
 
-    Collection<TopicoVO> getAllTopicos();
+    Collection<TopicoVO> getTopicosByFilter(String cursoNome);
 }
